@@ -4,10 +4,16 @@ jobs:
   validate_code:
     runs-on: ubuntu-latest
     steps:
-      - name: clone repository to runner
-        uses: actions/checkout@v3
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npm i
-      - run: npm test
+      - name: exploratory functions
+        run: pwd |
+          ls -l
+          whoami
+
+
+      # - name: clone repository to runner
+      #   uses: actions/checkout@v3
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 18
+      # - run: npm i
+      # - run: npm test
