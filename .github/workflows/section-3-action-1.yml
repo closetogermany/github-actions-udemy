@@ -1,17 +1,17 @@
-# First Workflow from Udemy Course - Will be listed in repo readme.md 
+# First Workflow from Udemy Course - Will be listed in repo readme.md
 
-name: section 3 - first action 
-on: workflow_dispatch 
-# must always be called "jobs" - not "job" 
-jobs: 
+name: test-action
+on: workflow_dispatch
+# must always be called "jobs" - not "job"
+jobs:
   first-job:
     runs-on: ubuntu-latest
-    steps: 
-      - name: Install Text Binary  
-        run: sudo apt-get install -y toilet lshw 
+    steps:
+      - name: Install Text Binary
+        run: sudo apt-get install -y toilet lshw
       - name: Print Initialized Message
         run:  toilet -w 120 --metal GitHub Actions
-      - name: Print System Data 
-        run: sudo lshw 
-        
-    
+      - name: Print System Data
+        run: sudo lshw
+
+

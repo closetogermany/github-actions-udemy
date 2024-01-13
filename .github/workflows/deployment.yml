@@ -1,4 +1,4 @@
-name: section 3 action 2 - node
+name: test and deploy node app
 on: [push, workflow_dispatch]
 jobs:
   validate_code:
