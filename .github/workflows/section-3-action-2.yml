@@ -5,10 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository to runner
-        uses: actions/checkout@v4.1.1
-      - name: install nodejs
-        uses: actions/setup-node@v4.01
+        uses: actions/checkout@v4
+      - name: install node js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
       - name: install dependencies
-        run: npm install
+        run: npm ci
       - name: run tests
         run: npm test
