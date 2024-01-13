@@ -6,8 +6,7 @@ jobs:
     steps:
       - name: exploratory functions
         run: |
-          cd /home/runner/
-          npm ci
+          npm i
           npm test
 
 
