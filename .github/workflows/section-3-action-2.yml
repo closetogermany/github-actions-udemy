@@ -6,9 +6,8 @@ jobs:
     steps:
       - name: exploratory functions
         run: |
-          pwd
-          ls -l
-          echo "${USER}"
+          npm ci
+          npm test
 
 
       # - name: clone repository to runner
