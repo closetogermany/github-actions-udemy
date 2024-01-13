@@ -4,8 +4,6 @@ jobs:
   validate_code:
     runs-on: ubuntu-latest
     steps:
-      - name: global node reset?
-        run: npm install -g np
       - name: clone repository to runner
         uses: actions/checkout@v3
       - uses: actions/setup-node@v4
