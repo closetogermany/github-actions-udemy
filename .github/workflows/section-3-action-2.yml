@@ -5,9 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: exploratory functions
-        run: pwd; |
-          ls -l;
-          echo "${USER}";
+        run: |
+          pwd
+          ls -l
+          echo "${USER}"
 
 
       # - name: clone repository to runner
